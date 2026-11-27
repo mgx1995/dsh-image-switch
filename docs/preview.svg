@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="300" viewBox="0 0 640 300">
+  <rect width="640" height="300" rx="20" fill="#f3f5f9"/>
+
+  <!-- 左：设置里的后端列表 -->
+  <rect x="44" y="46" width="286" height="208" rx="16" fill="#ffffff" stroke="#b7c3d2" stroke-width="2"/>
+
+  <!-- 第一行：被选中的视频后端 -->
+  <rect x="58" y="60" width="258" height="56" rx="12" fill="#e8f0fb"/>
+  <circle cx="84" cy="88" r="9" fill="none" stroke="#247bbf" stroke-width="2"/>
+  <circle cx="84" cy="88" r="4" fill="#247bbf"/>
+  <rect x="104" y="78" width="104" height="8" rx="4" fill="#c3d3e6"/>
+  <rect x="104" y="94" width="68" height="7" rx="3.5" fill="#dbe4ef"/>
+  <rect x="270" y="74" width="40" height="20" rx="10" fill="#247bbf"/>
+  <!-- 视频播放小三角 -->
+  <path d="M288 80l6 4-6 4z" fill="#ffffff"/>
+
+  <!-- 第二行：图片后端 -->
+  <circle cx="84" cy="146" r="9" fill="none" stroke="#b7c3d2" stroke-width="2"/>
+  <rect x="104" y="137" width="118" height="8" rx="4" fill="#d6dde7"/>
+  <rect x="104" y="153" width="60" height="7" rx="3.5" fill="#e0e5ed"/>
+  <rect x="270" y="132" width="40" height="20" rx="10" fill="#e7edf5"/>
+
+  <!-- 第三行：本地 -->
+  <circle cx="84" cy="204" r="9" fill="none" stroke="#b7c3d2" stroke-width="2"/>
+  <rect x="104" y="195" width="96" height="8" rx="4" fill="#d6dde7"/>
+  <rect x="104" y="211" width="74" height="7" rx="3.5" fill="#e0e5ed"/>
+  <rect x="270" y="190" width="40" height="20" rx="10" fill="#e7edf5"/>
+
+  <!-- 中：提交 + 轮询 + 抽帧的流程 -->
+  <path d="M344 150h30" fill="none" stroke="#7b8b9f" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M366 143l9 7-9 7" fill="none" stroke="#7b8b9f" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="382" y="96" width="86" height="30" rx="9" fill="#ffffff" stroke="#b7c3d2" stroke-width="2"/>
+  <rect x="392" y="107" width="54" height="7" rx="3.5" fill="#c3d3e6"/>
+  <path d="M425 130v14" fill="none" stroke="#9fb0c4" stroke-width="2" stroke-linecap="round"/>
+  <path d="M420 139l5 5 5-5" fill="none" stroke="#9fb0c4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="382" y="152" width="86" height="30" rx="9" fill="#eef4fb" stroke="#247bbf" stroke-width="2"/>
+  <circle cx="400" cy="167" r="5" fill="#247bbf"/>
+  <rect x="412" y="163" width="44" height="7" rx="3.5" fill="#b9cfe6"/>
+  <path d="M425 186v14" fill="none" stroke="#9fb0c4" stroke-width="2" stroke-linecap="round"/>
+  <path d="M420 195l5 5 5-5" fill="none" stroke="#9fb0c4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- 右：抽出来的帧 -->
+  <rect x="482" y="62" width="112" height="112" rx="12" fill="#ffffff" stroke="#b7c3d2" stroke-width="2"/>
+  <path d="M492 160l28-38 20 24 14-17 20 31z" fill="#c3d3e6"/>
+  <path d="M492 160l28-38 20 24 14-17 20 31z" fill="none" stroke="#9fb0c4" stroke-width="1.8" stroke-linejoin="round"/>
+  <circle cx="512" cy="86" r="8" fill="#e7edf5"/>
+
+  <rect x="482" y="186" width="50" height="46" rx="9" fill="#ffffff" stroke="#c9d4e1" stroke-width="1.6"/>
+  <path d="M489 226l12-16 9 11 7-8 8 13z" fill="#dbe4ef"/>
+  <rect x="544" y="186" width="50" height="46" rx="9" fill="#ffffff" stroke="#c9d4e1" stroke-width="1.6"/>
+  <path d="M551 226l12-16 9 11 7-8 8 13z" fill="#dbe4ef"/>
+
+  <!-- 底部：mp4 落盘 -->
+  <rect x="482" y="244" width="112" height="22" rx="11" fill="#e7edf5"/>
+  <rect x="492" y="252" width="46" height="6" rx="3" fill="#a9b8ca"/>
+  <circle cx="574" cy="255" r="5" fill="#7b8b9f" opacity=".6"/>
+</svg>

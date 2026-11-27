@@ -1,0 +1,60 @@
+{
+  "name": "dsh-image-switch",
+  "version": "1.1.0",
+  "description": "Switch which backend generate_image uses — local Stable Diffusion, Volcengine Ark (Doubao Seedream), AutoDL.Art, async video models such as SCNet MiniMax-H3, or any OpenAI-compatible image API — from a Settings page, with per-backend keys.",
+  "type": "module",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./lib/client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "lib",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "docs",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "image-generation",
+    "text-to-image",
+    "text-to-video",
+    "stable-diffusion",
+    "doubao",
+    "seedream",
+    "minimax",
+    "scnet",
+    "openai-compatible"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mgx1995/dsh-image-switch.git"
+  },
+  "homepage": "https://github.com/mgx1995/dsh-image-switch",
+  "bugs": {
+    "url": "https://github.com/mgx1995/dsh-image-switch/issues"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": []
+    }
+  },
+  "license": "MIT"
+}
